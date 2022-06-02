@@ -1,6 +1,7 @@
 import * as React from 'react';
 import './style.css';
 import Page from './Components/Page/Page';
+import Pagination from './Components/Pagination/Pagination';
 
 export default function App() {
   const [data, setData] = React.useState([]);
@@ -10,6 +11,12 @@ export default function App() {
   React.useEffect(() => {
     fetchData();
   }, []);
+
+  //Getting Current list
+  const indexOfLastList = currentPage * dataPerPage;
+  const indexOfFirstList = indexOfLastList - dataPerPage;
+  const currestList = data.slice(indexOfFirstList, indexOfLastList);
+
   const fetchData = async () => {
     const Url = 'https://api.covidtracking.com/v1/us/daily.json';
     setLoading(true);
@@ -21,6 +28,7 @@ export default function App() {
   return (
     <div>
       <Page lists={data} loading={loading} />
+      <Pagination />
     </div>
   );
 }

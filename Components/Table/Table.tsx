@@ -17,31 +17,6 @@ const Table: any = ({ lists }) => {
           })}
         </div>
       </div>
-      {/*  <table className="table__Content">
-        <thead>
-          <tr>
-            <th>Date Checked</th>
-            <th>Positive</th>
-            <th>Negative</th>
-            <th>Hospitalized</th>
-          </tr>
-        </thead>
-        <tbody>
-          {lists.map((list) => {
-            return (
-              <tr>
-                <td>{list.dateChecked}</td>
-                <td>{list.positive}</td>
-                <td>{list.negative}</td>
-                <td>{list.hospitalized}</td>
-              </tr>
-            );
-          })}
-          <tr>
-            <td>hi</td>
-          </tr>
-        </tbody>
-      </table> */}
     </div>
   );
 };
