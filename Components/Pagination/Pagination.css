@@ -24,9 +24,21 @@
   padding: 8px;
   margin: 5px;
   border: 1px solid lightgray;
+  cursor: pointer;
 }
 
 .Pagination__wraper ul li:hover {
-background-color: #800080;
-color: white;
+  background-color: #a144a1;
+  color: white;
+}
+.active {
+  background-color: #800080;
+  color: white;
+}
+
+@media (max-width: 668px) {
+  .Pagination__wraper ul li {
+    padding: 5px;
+    margin: 3px;
+  }
 }

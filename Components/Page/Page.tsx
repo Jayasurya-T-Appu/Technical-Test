@@ -7,6 +7,7 @@ const Page: any = ({
   dataPerPage,
   paginate,
   currentPage,
+  setDataPerPage,
 }) => {
   if (loading) {
     return <p>Loading ...</p>;
@@ -19,6 +20,7 @@ const Page: any = ({
         dataPerPage={dataPerPage}
         paginate={paginate}
         currentPage={currentPage}
+        setDataPerPage={setDataPerPage}
       />
     </div>
   );

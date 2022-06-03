@@ -35,6 +35,7 @@ export default function App() {
         dataPerPage={dataPerPage}
         totalData={data.length}
         paginate={paginate}
+        setDataPerPage={setDataPerPage}
       />
     </div>
   );

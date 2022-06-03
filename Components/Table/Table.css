@@ -35,3 +35,48 @@
   justify-content: space-around;
   align-items: center;
 }
+
+.table__Button__Container {
+  width: 90%;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  cursor: pointer;
+}
+.table__Button__Wrapper {
+  width: 6rem;
+  border-radius: 5px;
+  background-color: white;
+  padding: 0.5rem 1rem;
+  margin-bottom: 2px;
+  text-align: center;
+  position: relative;
+  transition: 0.5s;
+}
+.table__Button__Wrapper:hover {
+  background-color: #800080;
+  color: white;
+}
+.table__button_items {
+  position: absolute;
+  margin-top: 0.5rem;
+  z-index: 10;
+}
+.table__button_items p {
+  padding: 0.5rem 1rem;
+  width: 6rem;
+  border-radius: 5px;
+  margin-bottom: 0.5px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #fefeff;
+  -webkit-box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.3);
+}
+
+.table__button_items p:hover {
+  background-color: #812281;
+  color: white;
+}
