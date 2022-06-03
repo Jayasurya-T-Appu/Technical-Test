@@ -9,7 +9,6 @@ const Pagination: any = ({ totalData, dataPerPage, paginate, currentPage }) => {
   const onHandleChange = (number) => {
     paginate(number);
     setActiveId(number);
-    console.log('current Page ', currentPage, 'active', activeId);
   };
 
   let indexOfcurrent = pageNumber.indexOf(currentPage);

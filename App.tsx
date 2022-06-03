@@ -11,7 +11,9 @@ export default function App() {
   React.useEffect(() => {
     fetchData();
   }, []);
-  const paginate = (number) => setCureentPage(number);
+  const paginate = (number) => {
+    setCureentPage(number);
+  };
 
   //Getting Current list
   const indexOfLastList = currentPage * dataPerPage;
@@ -36,6 +38,7 @@ export default function App() {
         totalData={data.length}
         paginate={paginate}
         setDataPerPage={setDataPerPage}
+        setCureentPage={setCureentPage}
       />
     </div>
   );

@@ -14,11 +14,11 @@ const Table: any = ({
   const [isActive, setIsActive] = React.useState(false);
   const menuref = React.useRef(null);
   const ToggledropDown = (e) => {
-    console.log(menuref.current);
     if (!menuref.current.contains(e.target)) {
     }
   };
   const onClickHandle = (e) => {
+    console.log(lists);
     setDataPerPage(e.target.textContent);
     setIsActive(!isActive);
   };

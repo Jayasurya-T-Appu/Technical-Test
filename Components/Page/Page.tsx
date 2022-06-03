@@ -8,6 +8,7 @@ const Page: any = ({
   paginate,
   currentPage,
   setDataPerPage,
+  setCureentPage,
 }) => {
   if (loading) {
     return <p>Loading ...</p>;
@@ -21,6 +22,7 @@ const Page: any = ({
         paginate={paginate}
         currentPage={currentPage}
         setDataPerPage={setDataPerPage}
+        setCureentPage={setCureentPage}
       />
     </div>
   );
