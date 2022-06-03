@@ -9,6 +9,7 @@ const Table: any = ({
   totalData,
   paginate,
   setDataPerPage,
+  setCureentPage,
 }) => {
   React.useEffect(() => {});
   const [isActive, setIsActive] = React.useState(false);
@@ -18,8 +19,8 @@ const Table: any = ({
     }
   };
   const onClickHandle = (e) => {
-    console.log(lists);
     setDataPerPage(e.target.textContent);
+    setCureentPage(1);
     setIsActive(!isActive);
   };
   return (

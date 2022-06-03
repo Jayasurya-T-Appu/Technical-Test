@@ -5,6 +5,9 @@ const Pagination: any = ({ totalData, dataPerPage, paginate, currentPage }) => {
   for (let i = 1; i <= Math.ceil(totalData / dataPerPage); i++) {
     pageNumber.push(i);
   }
+  React.useEffect(() => {
+    setActiveId(currentPage);
+  }, [currentPage]);
   const [activeId, setActiveId] = React.useState(currentPage);
   const onHandleChange = (number) => {
     paginate(number);
