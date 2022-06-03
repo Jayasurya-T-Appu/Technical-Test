@@ -10,14 +10,20 @@ const Table: any = ({
   paginate,
   setDataPerPage,
 }) => {
+  React.useEffect(() => {});
   const [isActive, setIsActive] = React.useState(false);
-
+  const menuref = React.useRef(null);
+  const ToggledropDown = (e) => {
+    console.log(menuref.current);
+    if (!menuref.current.contains(e.target)) {
+    }
+  };
   const onClickHandle = (e) => {
     setDataPerPage(e.target.textContent);
     setIsActive(!isActive);
   };
   return (
-    <div className="table__Container">
+    <div ref={menuref} onClick={ToggledropDown} className="table__Container">
       <div className="table__Button__Container">
         <div>
           <div

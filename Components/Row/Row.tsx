@@ -4,7 +4,7 @@ const Row: any = ({ list }) => {
   return (
     <div
       className={
-        list.positive < 100 ? 'list__Container active' : 'list__Container'
+        list.positive < 100 ? 'list__Container activeOne' : 'list__Container'
       }
     >
       <p>{list.dateChecked.slice(0, 10)}</p>

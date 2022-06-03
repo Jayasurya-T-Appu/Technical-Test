@@ -15,6 +15,6 @@
 .list__Container p {
   width: 10rem;
 }
-.active {
+.activeOne {
   background-color: greenyellow;
 }
