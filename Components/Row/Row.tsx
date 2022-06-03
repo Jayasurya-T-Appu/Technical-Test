@@ -1,7 +1,6 @@
 import * as React from 'react';
 import './Row.css';
 const Row: any = ({ list }) => {
-  console.log(list);
   return (
     <div className="list__Container">
       <p>{list.dateChecked}</p>

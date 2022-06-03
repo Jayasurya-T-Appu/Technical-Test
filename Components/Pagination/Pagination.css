@@ -1,0 +1,32 @@
+.Pagination__Container {
+  width: 100%;
+  display: flex;
+  background-color: #e1e6f1;
+  justify-content: center;
+  align-items: center;
+}
+
+.Pagination__wraper {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9rem;
+  width: 90%;
+  border-radius: 10px;
+  padding: 0.5rem;
+  background-color: #f9fcff;
+}
+.Pagination__wraper ul {
+  list-style: none;
+  display: flex;
+}
+
+.Pagination__wraper ul li {
+  padding: 8px;
+  margin: 5px;
+  border: 1px solid lightgray;
+}
+
+.Pagination__wraper ul li:hover {
+background-color: #800080;
+color: white;
+}

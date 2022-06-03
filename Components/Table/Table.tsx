@@ -1,7 +1,14 @@
 import * as React from 'react';
 import './Table.css';
 import Row from '../Row/Row';
-const Table: any = ({ lists }) => {
+import Pagination from '../../Components/Pagination/Pagination';
+const Table: any = ({
+  lists,
+  currentPage,
+  dataPerPage,
+  totalData,
+  paginate,
+}) => {
   return (
     <div className="table__Container">
       <div className="table__Content">
@@ -17,6 +24,12 @@ const Table: any = ({ lists }) => {
           })}
         </div>
       </div>
+      <Pagination
+        dataPerPage={dataPerPage}
+        totalData={totalData}
+        paginate={paginate}
+        currentPage={currentPage}
+      />
     </div>
   );
 };
