@@ -14,8 +14,11 @@ const Table: any = ({
   React.useEffect(() => {});
   const [isActive, setIsActive] = React.useState(false);
   const menuref = React.useRef(null);
+
   const ToggledropDown = (e) => {
     if (!menuref.current.contains(e.target)) {
+      console.log('clicked', menuref.current);
+      setIsActive(false);
     }
   };
   const onClickHandle = (e) => {
@@ -24,10 +27,11 @@ const Table: any = ({
     setIsActive(!isActive);
   };
   return (
-    <div ref={menuref} onClick={ToggledropDown} className="table__Container">
+    <div onClick={ToggledropDown} className="table__Container">
       <div className="table__Button__Container">
         <div>
           <div
+            ref={menuref}
             onClick={() => setIsActive(!isActive)}
             className="table__Button__Wrapper"
           >
